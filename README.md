@@ -115,6 +115,7 @@ todomold . --no-blame            # 大仓库快速模式
 
 ## Related tools
 
+- [csvpulse](https://github.com/doge-th/csvpulse) — take the pulse of a CSV file in one command
 - [awakehours](https://github.com/doge-th/awakehours) — find the hours when your whole team is actually awake
 - [toktree](https://github.com/doge-th/toktree) — `du` for your LLM context window
 - [githotspot](https://github.com/doge-th/githotspot) — churn × complexity hotspots in your git history
