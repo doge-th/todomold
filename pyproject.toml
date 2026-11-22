@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "todomold"
+version = "0.1.0"
+description = "Every TODO/FIXME in your repo, with who wrote it and how long it has been rotting — ranked by age"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["todo", "fixme", "git", "blame", "tech-debt", "code-review", "cli", "developer-tools"]
+authors = [{ name = "doge-th" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+todomold = "todomold.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/doge-th/todomold"
+Issues = "https://github.com/doge-th/todomold/issues"
+
+[tool.setuptools]
+packages = ["todomold"]

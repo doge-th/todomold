@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13"]
+        os: [ubuntu-latest]
+        include:
+          # setup-python no longer ships 3.9 builds for ubuntu-latest (24.04)
+          - python: "3.9"
+            os: ubuntu-22.04
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history: the smoke test blames the repo itself
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install (validates packaging)
+        run: pip install -e .
+      - name: Tests
+        run: python -m unittest discover -s tests -v
+      - name: CLI smoke test
+        run: todomold . --top 3
