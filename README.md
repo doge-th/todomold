@@ -109,8 +109,15 @@ todomold . --no-blame            # 大仓库快速模式
 
 年龄 = 当前这行代码最后被写下的时间(行级考古的诚实代价:重排版会刷新
 时间戳)。配套工具:[toktree](https://github.com/doge-th/toktree)(上下文
-窗口预算)和 [githotspot](https://github.com/doge-th/githotspot)(churn ×
-复杂度热点)——三个一起看,你的仓库就没有秘密了。
+窗口预算)、[githotspot](https://github.com/doge-th/githotspot)(churn ×
+复杂度热点)和 [awakehours](https://github.com/doge-th/awakehours)(全团队
+都醒着的时段)——四个一起看,你的仓库和排会都没有秘密了。
+
+## Related tools
+
+- [awakehours](https://github.com/doge-th/awakehours) — find the hours when your whole team is actually awake
+- [toktree](https://github.com/doge-th/toktree) — `du` for your LLM context window
+- [githotspot](https://github.com/doge-th/githotspot) — churn × complexity hotspots in your git history
 
 ## Development
 
