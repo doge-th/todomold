@@ -120,6 +120,7 @@ todomold . --no-blame            # 大仓库快速模式
 - [toktree](https://github.com/doge-th/toktree) — `du` for your LLM context window
 - [githotspot](https://github.com/doge-th/githotspot) — churn × complexity hotspots in your git history
 - [pyverscan](https://github.com/doge-th/pyverscan) — the oldest Python your code can run on, from the AST up
+- [commitnotes](https://github.com/doge-th/commitnotes) — release notes from conventional commits, with no dependencies
 
 ## Development
 
